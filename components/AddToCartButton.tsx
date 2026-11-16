@@ -21,7 +21,7 @@ export default function AddToCartButton({ product }: { product: Product }) {
         })
       }
       disabled={product.stock <= 0}
-      className="w-full rounded-xl bg-neutral-900 px-8 py-4 text-base font-bold text-white transition hover:bg-neutral-800 disabled:cursor-not-allowed disabled:bg-neutral-300"
+      className="w-full cursor-pointer rounded-xl bg-neutral-900 px-8 py-4 text-base font-bold text-white transition hover:bg-neutral-800 disabled:cursor-not-allowed disabled:bg-neutral-300"
     >
       {product.stock > 0 ? 'Ajouter au panier' : 'Pièce vendue'}
     </button>

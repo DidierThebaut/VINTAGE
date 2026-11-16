@@ -127,11 +127,13 @@ export default function CartDrawer() {
                               <h3 className="text-sm font-bold text-neutral-900">{item.name}</h3>
                               <button
                                 type="button"
-                                onClick={() => removeItem(item.id)}
-                                aria-label={`Retirer ${item.name} du panier`}
-                                className="text-neutral-400 hover:text-red-600"
+                                onClick={() => removeItem(item.id, item.size)}
+                                aria-label={`Supprimer ${item.name} du panier`}
+                                title="Supprimer du panier"
+                                className="inline-flex shrink-0 cursor-pointer items-center gap-1 rounded-lg px-2 py-1 text-xs font-semibold text-neutral-500 transition hover:bg-red-50 hover:text-red-600"
                               >
                                 <Trash2 className="h-4 w-4" />
+                                <span>Supprimer</span>
                               </button>
                             </div>
                             <p className="mt-0.5 text-xs text-neutral-500">Taille : {item.size}</p>

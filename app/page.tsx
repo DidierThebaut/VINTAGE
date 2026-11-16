@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import CartDrawer from '@/components/CartDrawer'
+import DemoReviews from '@/components/DemoReviews'
 import type { Product } from '@/lib/supabase'
 import { createClient } from '@/utils/supabase/server'
 
@@ -109,6 +110,7 @@ export default async function HomePage() {
             ))}
           </ul>
         )}
+        <DemoReviews />
       </main>
     </div>
   )

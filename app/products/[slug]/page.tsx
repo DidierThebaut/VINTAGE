@@ -40,7 +40,12 @@ export default async function ProductPage({
           <Link href="/" className="text-2xl font-black tracking-tighter uppercase">
             VINTAGE<span className="text-emerald-600">.FC</span>
           </Link>
-          <CartDrawer />
+          <nav aria-label="Navigation principale" className="flex items-center gap-4 sm:gap-6">
+            <Link href="/numero-10" className="text-sm font-semibold text-neutral-700 hover:text-emerald-700">
+              Maillots n° 10
+            </Link>
+            <CartDrawer />
+          </nav>
         </div>
       </header>
 

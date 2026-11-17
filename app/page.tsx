@@ -37,10 +37,15 @@ export default async function HomePage() {
     <div className="min-h-screen bg-white text-neutral-900">
       <header className="border-b border-neutral-200">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <a href="/" className="text-2xl font-black uppercase tracking-tighter">
+          <Link href="/" className="text-2xl font-black uppercase tracking-tighter">
             VINTAGE<span className="text-emerald-600">.FC</span>
-          </a>
-          <CartDrawer />
+          </Link>
+          <nav aria-label="Navigation principale" className="flex items-center gap-4 sm:gap-6">
+            <Link href="/numero-10" className="text-sm font-semibold text-neutral-700 hover:text-emerald-700">
+              Maillots n° 10
+            </Link>
+            <CartDrawer />
+          </nav>
         </div>
       </header>
       <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
